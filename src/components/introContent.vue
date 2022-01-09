@@ -3,8 +3,13 @@
     <div class="intro_center">
       <div class="intro_line"></div>
       <div class="intro_row">
-        <div :class="index%2==0?'intro_list':'intro_list intro_list_active'" v-for="(item,index) in list"
-          :key="item.id">
+        <div
+          :class="
+            index % 2 == 0 ? 'intro_list' : 'intro_list intro_list_active'
+          "
+          v-for="(item, index) in list"
+          :key="item.id"
+        >
           <div class="intro_box"></div>
           <p class="intro_list_name">FILL IN YOUR CONTENT</p>
           <div class="intro_list_content">
@@ -17,17 +22,29 @@
       </div>
       <div class="intro_img">
         <div class="intro_img_list">
-          <div class="intro_img_list_top"><img src="" alt="JPG."></div>
+          <div class="intro_img_list_top"><img src="" alt="JPG." /></div>
           <div class="intro_img_list_bot">
             <div>FILL IN YOUR CONTENT</div>
-            <div @click="seeMore"><img style="width:47px;height:47px;" src="../assets/img/right_icon1.png" alt=""></div>
+            <div @click="seeMore">
+              <img
+                style="width:47px;height:47px;"
+                src="../assets/img/right_icon1.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <div class="intro_img_list">
-          <div class="intro_img_list_top"><img src="" alt="JPG."></div>
+          <div class="intro_img_list_top"><img src="" alt="JPG." /></div>
           <div class="intro_img_list_bot">
             <div>FILL IN YOUR CONTENT</div>
-            <div @click="seeMore"><img style="width:47px;height:47px;" src="../assets/img/right_icon1.png" alt=""></div>
+            <div @click="seeMore">
+              <img
+                style="width:47px;height:47px;"
+                src="../assets/img/right_icon1.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -36,21 +53,21 @@
 </template>
 <script>
 export default {
-  name: "IntroContent",
+  name: 'IntroContent',
   components: {},
-  data() {
+  data () {
     return {
-      list: [{}, {}, {}, {}],
-    };
+      list: [{}, {}, {}, {}]
+    }
   },
-  created() {},
+  created () {},
   methods: {
-    seeMore() {
-      this.$message.warning("此功能暂未开放");
-    },
+    seeMore () {
+      this.$message.warning('此功能暂未开放')
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style lang="less" scoped>
 .intro_center {

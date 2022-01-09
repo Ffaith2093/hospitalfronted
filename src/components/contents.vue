@@ -17,8 +17,9 @@
         <div class="them_list_intro">FILL IN YOUR CONTENT</div>
         <div class="them_list_article">
           <div class="them_list_article_text">
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT
+            FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL
+            IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN
+            YOUR CONTENT FILL IN YOUR CONTENT
           </div>
           <div class="them_list_article_name">
             <span>xxxxx</span>
@@ -33,20 +34,20 @@
 
 <script>
 export default {
-  name: "Content",
+  name: 'Content',
   components: {},
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  created() {},
+  created () {},
   methods: {
-    jump(url) {
-      if (!url) return;
-      this.$router.push(url);
-    },
+    jump (url) {
+      if (!url) return
+      this.$router.push(url)
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style lang="less" scoped>
 .web {

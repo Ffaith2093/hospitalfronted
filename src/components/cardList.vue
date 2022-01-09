@@ -1,22 +1,32 @@
 <!--
  * @Description: file information
- * @Author: will
+ * @Author: Dzl
  * @Date: 2021-08-22 10:51:03
- * @LastEditors: will
- * @LastEditTime: 2021-08-22 11:09:07
+ * @LastEditors: Dzl
+ * @LastEditTime: 2022-01-08 15:59:18
 -->
 <template>
   <div class="web">
     <p class="jpg">JPG.</p>
     <div class="card_content">
-      <div :class="index%2==0?'card_list':'card_list card_list_active'" v-for="(item,index) in headList" :key="item.id">
+      <div
+        :class="index % 2 == 0 ? 'card_list' : 'card_list card_list_active'"
+        v-for="(item, index) in headList"
+        :key="item.id"
+      >
         <div class="round"></div>
         <p>TITLE</p>
         <div class="card_text">
-          FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL
+          FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN
+          YOUR CONTENT FILL IN YOUR CONTENT FILL
         </div>
-        <div class="card_icon" @click="jump"><img style="width:28px;height:28px;" src="../assets/img/right_icon2.png"
-            alt=""></div>
+        <div class="card_icon" @click="jump">
+          <img
+            style="width:28px;height:28px;"
+            src="../assets/img/right_icon2.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -24,28 +34,28 @@
 
 <script>
 export default {
-  name: "cardList",
+  name: 'cardList',
   components: {},
-  data() {
+  data () {
     return {
       headList: [
-        { name: "Home", url: "" },
-        { name: "Introduction", url: "" },
-        { name: "Sectioin navigation", url: "" },
-        { name: "Booking", url: "" },
-        { name: "News", url: "" },
-        { name: "Announcement", url: "" },
-      ],
-    };
+        { name: 'Home', url: '' },
+        { name: 'Introduction', url: '' },
+        { name: 'Sectioin navigation', url: '' },
+        { name: 'Booking', url: '' },
+        { name: 'News', url: '' },
+        { name: 'Announcement', url: '' }
+      ]
+    }
   },
-  created() {},
+  created () {},
   methods: {
-    jump() {
-      this.$message.warning("此页面暂未开放");
-    },
+    jump () {
+      this.$message.warning('此页面暂未开放')
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style lang="less" scoped>
 .web {

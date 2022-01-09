@@ -3,7 +3,7 @@
  * @Author: Dzl
  * @Date: 2021-08-22 10:51:03
  * @LastEditors: Dzl
- * @LastEditTime: 2021-11-11 08:40:12
+ * @LastEditTime: 2022-01-08 16:01:58
 -->
 <template>
   <div id="app">
@@ -11,8 +11,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 <style lang="less">
 * {
   margin: 0;

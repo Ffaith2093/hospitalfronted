@@ -3,13 +3,19 @@
  * @Author: Dzl
  * @Date: 2021-08-22 10:51:03
  * @LastEditors: Dzl
- * @LastEditTime: 2021-11-11 08:39:40
+ * @LastEditTime: 2022-01-08 15:59:30
 -->
 <template>
   <div class="banner">
     <div class="banner_center">
       <div>
-        <div class="logo"><img style="width:178px;height:178px;" src="../assets/img/logo.png" alt=""></div>
+        <div class="logo">
+          <img
+            style="width:178px;height:178px;"
+            src="../assets/img/logo.png"
+            alt=""
+          />
+        </div>
         <p class="logo_title">ANNING</p>
       </div>
       <div class="banner_text">
@@ -25,19 +31,19 @@
 </template>
 <script>
 export default {
-  name: "Banner",
+  name: 'Banner',
   components: {},
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  created() {},
+  created () {},
   methods: {
-    seeMore() {
-      this.$message.warning("此功能暂未开放");
-    },
+    seeMore () {
+      this.$message.warning('此功能暂未开放')
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style scoped>
 .banner {

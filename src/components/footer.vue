@@ -4,34 +4,61 @@
       <div class="footer_content">
         <div class="footer_logo">
           <div class="logo">
-            <img style="width:145px;height:145px;" src="../assets/img/logo.png" alt="">
+            <img
+              style="width:145px;height:145px;"
+              src="../assets/img/logo.png"
+              alt=""
+            />
           </div>
           <p class="logo_title">ANNING</p>
           <div class="logo_info">
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT
-            FILL IN YOUR CONTENT FILL IN YOUR CONTENT
+            FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL
+            IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN
+            YOUR CONTENT FILL IN YOUR CONTENT
           </div>
         </div>
         <div class="footer_info">
           <div class="footer_p">MORE INFORMATION</div>
           <div class="info_content">
             <div class="info_list">
-              <div><img style="width:54px;height:54px;" src="../assets/img/address_icon.png" alt=""></div>
+              <div>
+                <img
+                  style="width:54px;height:54px;"
+                  src="../assets/img/address_icon.png"
+                  alt=""
+                />
+              </div>
               <div>Street Name&Number,<br />Town,Postcode/Zip</div>
             </div>
             <div class="info_list">
-              <div><img style="width:54px;height:54px;" src="../assets/img/qq_icon.png" alt=""></div>
+              <div>
+                <img
+                  style="width:54px;height:54px;"
+                  src="../assets/img/qq_icon.png"
+                  alt=""
+                />
+              </div>
               <div>+00（123）xxxx xxxx</div>
             </div>
             <div class="info_list">
-              <div><img style="width:48px;height:48px;" src="../assets/img/phone_icon.png" alt=""></div>
+              <div>
+                <img
+                  style="width:48px;height:48px;"
+                  src="../assets/img/phone_icon.png"
+                  alt=""
+                />
+              </div>
               <div>+00（123）xxxx xxxx</div>
             </div>
             <div class="info_list" style="border:none">
-              <div style="padding:0 5px;"><img style="width:40px;height:40px;" src="../assets/img/email_icon.png"
-                  alt=""></div>
+              <div style="padding:0 5px;">
+                <img
+                  style="width:40px;height:40px;"
+                  src="../assets/img/email_icon.png"
+                  alt=""
+                />
+              </div>
+
               <div>1563421665@xx.com</div>
             </div>
           </div>
@@ -57,13 +84,21 @@
           <div class="footer_p">MORE INFORMATION</div>
           <div class="info_content">
             <div class="info_list">
-              <div style="text-indent: 20px;text-align: justify;line-height: 25px;">FILL IN YOUR CONTENT FILL IN YOUR
-                CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR </div>
+              <div
+                style="text-indent: 20px;text-align: justify;line-height: 25px;"
+              >
+                FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT
+                FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR
+              </div>
               <div>FILL IN YOUR CONTENT</div>
             </div>
             <div class="info_list" style="border:none">
-              <div style="text-indent: 20px;text-align: justify;line-height: 25px;">FILL IN YOUR CONTENT FILL IN YOUR
-                CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR </div>
+              <div
+                style="text-indent: 20px;text-align: justify;line-height: 25px;"
+              >
+                FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR CONTENT
+                FILL IN YOUR CONTENT FILL IN YOUR CONTENT FILL IN YOUR
+              </div>
               <div>FILL IN YOUR CONTENT</div>
             </div>
           </div>
@@ -78,20 +113,20 @@
 
 <script>
 export default {
-  name: "Footer",
+  name: 'Footer',
   components: {},
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  created() {},
+  created () {},
   methods: {
-    jump(url) {
-      if (!url) return;
-      this.$router.push(url);
-    },
+    jump (url) {
+      if (!url) return
+      this.$router.push(url)
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style lang="less" scoped>
 .web {

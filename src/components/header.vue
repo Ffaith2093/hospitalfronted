@@ -12,7 +12,7 @@
       <div>
         <ul>
           <li v-for="item in headList" :key="item.name" @click="jump(item.url)">
-            {{item.name}}
+            {{ item.name }}
           </li>
         </ul>
       </div>
@@ -22,31 +22,31 @@
 
 <script>
 export default {
-  name: "Header",
+  name: 'Header',
   components: {},
-  data() {
+  data () {
     return {
       headList: [
-        { name: "Home", url: "" },
-        { name: "Introduction", url: "" },
-        { name: "Sectioin navigation", url: "" },
-        { name: "Booking", url: "" },
-        { name: "News", url: "" },
-        { name: "Announcement", url: "" },
-      ],
-    };
+        { name: 'Home', url: '' },
+        { name: 'Introduction', url: '' },
+        { name: 'Sectioin navigation', url: '' },
+        { name: 'Booking', url: '' },
+        { name: 'News', url: '' },
+        { name: 'Announcement', url: '' }
+      ]
+    }
   },
-  created() {},
+  created () {},
   methods: {
-    jump(url) {
+    jump (url) {
       if (!url) {
-        this.$message.warning("此页面暂未开放");
+        this.$message.warning('此页面暂未开放')
       }
-      this.$router.push(url);
-    },
+      this.$router.push(url)
+    }
   },
-  mounted() {},
-};
+  mounted () {}
+}
 </script>
 <style lang="less" scoped>
 .web {

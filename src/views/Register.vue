@@ -5,18 +5,18 @@
 -->
 <template>
   <div>
-    <Hearder />
+    <Header />
     <div class="center">
       <div class="center_top">
         <div class="logo"><img style="width:121px;height:121px;" src="../assets/img/logo.png" alt=""></div>
         <p class="logo_title">ANNING</p>
         <div class="inputbox">
           <div><span class="box_text">The user name</span><input class="box" type="user"
-              placeholder="Please enter your username" v-model="username"></input></div>
-          <div><span class="box_text">Password</span><input class="box" type="password" placeholder="Please enter your password" v-model="password"></input></div>
-          <div><span class="box_text">Confirm the password</span><input class="box"type="password"  placeholder="Please re-enter your password" v-model="repassword"></input></div>
-          <div><span class="box_text">Name</span><input class="box" type="text" placeholder="Please enter your name" v-model="name"></input> </div>
-          <div><span class="box_text">Email</span><input class="box" type="email" placeholder="Please enter the Email" v-model="email"></input> </div>
+              placeholder="Please enter your username" v-model="username"></div>
+          <div><span class="box_text">Password</span><input class="box" type="password" placeholder="Please enter your password" v-model="password"></div>
+          <div><span class="box_text">Confirm the password</span><input class="box" type="password"  placeholder="Please re-enter your password" v-model="repassword"></div>
+          <div><span class="box_text">Name</span><input class="box" type="text" placeholder="Please enter your name" v-model="name"></div>
+          <div><span class="box_text">Email</span><input class="box" type="email" placeholder="Please enter the Email" v-model="email"></div>
           <div><button class="button" @click="Enroll()">ENROLL</button></div>
         </div>
         
@@ -27,15 +27,13 @@
   </div>
 </template>
 <script>
-  import Hearder from "../components/header.vue";
-  import CardList from "../components/cardList.vue";
+  import Header from "../components/header.vue";
   import Footer from "../components/footer.vue";
   export default {
     name: "Register",
     components: {
-      Hearder,
+      Header,
       Footer,
-      CardList,
     },
     data(){
       return{
